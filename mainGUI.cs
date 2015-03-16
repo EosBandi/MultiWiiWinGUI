@@ -1,7 +1,7 @@
 ﻿/*
  * MultiWii Windows GUI by Andras Schaffer (EOSBandi)
- * February  2014     V2.3 Beta
-
+ * February  2015     V2.4 
+ * 
  * 
  * LogBrowser is based on ArduPlanner Mega code written by Michael Oborne http://www.diydrones.com 
  * Instrument controls are based on AvionicsInstrument Controls written by Guillaume CHOUTEAU http://www.codeproject.com/Articles/27411/C-Avionic-Instrument-Controls
