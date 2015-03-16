@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F21215A0-47B6-44C4-9B37-8087E0309F90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MultiWiiWinGUI</RootNamespace>
+    <AssemblyName>MultiWiiWinGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.3.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2D54C69C2072CC432278F2C00BA68B9D16B35CCB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MultiWiiWinGUI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mwwingui.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>.\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>.\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>.\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>.\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>.\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>.\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>.\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>.\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>.\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>.\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common.cs" />
+    <Compile Include="communication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="constants.cs" />
+    <Compile Include="DebugWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugWindow.Designer.cs">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_downloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_downloader.Designer.cs">
+      <DependentUpon>log_downloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MWGUIControls\altitude_meter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\battery_indicator_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\ColorProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\throttle_expo_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\vertical_speed_meter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SensorGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SensorGraph.Designer.cs">
+      <DependentUpon>SensorGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setup_wizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setup_wizard.Designer.cs">
+      <DependentUpon>setup_wizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MWGUIControls\artifical_horizont.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\CheckBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\MWGUIControlsResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MWGUIControlsResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MWGUIControls\indicator_lamp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\rc_input_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\rc_expo_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\gps_indicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\heading_indicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\GUIControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MWGUIControls\motors_control.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageBoxCentered.cs" />
+    <Compile Include="LogBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogBrowser.Designer.cs">
+      <DependentUpon>LogBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainGUI.Designer.cs">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mw_data_struct.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugWindow.resx">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_downloader.resx">
+      <DependentUpon>log_downloader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorGraph.resx">
+      <DependentUpon>SensorGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setup_wizard.resx">
+      <DependentUpon>setup_wizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MWGUIControls\MWGUIControlsResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MWGUIControlsResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogBrowser.resx">
+      <DependentUpon>LogBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainGUI.resx">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="avcodec-53.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="avdevice-53.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="avfilter-2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="avformat-53.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="avutil-51.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Captures\.placeholder.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logfields.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logs\.placeholder.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mwwingui.ico" />
+    <Content Include="optionsconfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\disconnect.png" />
+    <None Include="Resources\connect.png" />
+    <None Include="Resources\read_settings.png" />
+    <None Include="Resources\write_settings.png" />
+    <None Include="Resources\write_to_file.png" />
+    <None Include="Resources\load_from_file.png" />
+    <None Include="Resources\logbrowser.png" />
+    <None Include="Resources\start_log.png" />
+    <None Include="Resources\stop_log.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\earth-3.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\plane.png" />
+    <None Include="Resources\read_settings1.png" />
+    <None Include="Resources\quad.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\airplane.bmp" />
+    <None Include="Resources\heli_90.bmp" />
+    <None Include="Resources\heli_120.bmp" />
+    <None Include="Resources\vtail.bmp" />
+    <Content Include="Resources\Altimeter_Background.bmp" />
+    <Content Include="Resources\battery_indicator_background.png" />
+    <Content Include="Resources\del_btn.png" />
+    <Content Include="Resources\down_btn.png" />
+    <None Include="Resources\home_marker.png" />
+    <None Include="Resources\flight_here.png" />
+    <Content Include="Resources\i_green_off.bmp" />
+    <Content Include="Resources\i_green_on.bmp" />
+    <Content Include="Resources\i_red_off.bmp" />
+    <Content Include="Resources\i_red_on.bmp" />
+    <Content Include="Resources\LongNeedleAltimeter.bmp" />
+    <None Include="Resources\map_point.png" />
+    <None Include="Resources\map_point1.png" />
+    <Content Include="Resources\marker_airplane.png" />
+    <Content Include="Resources\marker_bi.png" />
+    <None Include="Resources\marker_blue.png" />
+    <Content Include="Resources\marker_fwing.png" />
+    <Content Include="Resources\marker_heli.png" />
+    <Content Include="Resources\marker_hex6p.png" />
+    <Content Include="Resources\marker_hex6x.png" />
+    <Content Include="Resources\marker_octoflatx.png" />
+    <Content Include="Resources\marker_octop8.png" />
+    <Content Include="Resources\marker_octox8.png" />
+    <Content Include="Resources\marker_oktoflatp.png" />
+    <None Include="Resources\marker_poi.png" />
+    <Content Include="Resources\marker_quadp.png" />
+    <Content Include="Resources\marker_quadx.png" />
+    <Content Include="Resources\marker_tri.png" />
+    <Content Include="Resources\marker_vtail4.png" />
+    <Content Include="Resources\marker_y4.png" />
+    <Content Include="Resources\marker_y6.png" />
+    <Content Include="Resources\navi-warning.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\numbers.bmp" />
+    <Content Include="Resources\poshold.png" />
+    <None Include="Resources\poshold_markert.png" />
+    <Content Include="Resources\poshold_unlim.png" />
+    <Content Include="Resources\SmallNeedleAltimeter.bmp" />
+    <None Include="Resources\timed_marker.png" />
+    <Content Include="Resources\trash.png" />
+    <Content Include="Resources\up_btn.png" />
+    <Content Include="Resources\VerticalSpeedIndicator_Background.bmp" />
+    <None Include="Resources\wizard_7.bmp" />
+    <Content Include="Resources\wpicon.png" />
+    <Content Include="Settings\.placeholder.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="swscale-2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

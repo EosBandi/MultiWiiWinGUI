@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!-- This a config file for RC options for latest dev MultiWii Code-->
+<CONFIG>
+	<AUX_OPTION id="0"  name="LEVEL"    desc="Auto Leveling mode" />
+	<AUX_OPTION id="1"  name="ALTHOLD"  desc="Altitude hold" />
+	<AUX_OPTION id="2"  name="MAG"      desc="Heading hold with compass" />
+	<AUX_OPTION id="3"  name="CAMSTAB"  desc="Camera Stabilisation" />
+	<AUX_OPTION id="4"  name="CAMTRIG"  desc="Camera Trigger" />
+	<AUX_OPTION id="5"  name="ARM"      desc="Arm motors" />
+	<AUX_OPTION id="6"  name="RTH"      desc="Return to home" />
+	<AUX_OPTION id="7"  name="POSHOLD"  desc="Position hold" />
+	<AUX_OPTION id="8"  name="PASSTHRU" desc="Passthru for flying wings" />
+	<AUX_OPTION id="9"  name="HEADFREE" desc="Head free mode" />
+	<AUX_OPTION id="10" name="BEEPER"   desc="Activate beeper" />
+	
+	<PID id="0" name="Roll" desc="Roll Rate control" />
+	  <P id="0" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="0" shown="true" min="0" max="0.250" prec="1000" />
+	  <D id="0" shown="true" min="0" max="100" prec="1" />
+
+    <PID id="1" name="Pitch" desc="Pitch Rate control" />
+	  <P id="1" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="1" shown="true" min="0" max="0.250" prec="1000" />
+	  <D id="1" shown="true" min="0" max="100" prec="1" />
+	
+	<PID id="2" name="Yaw" desc="Yaw Rate control" />
+	  <P id="2" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="2" shown="true" min="0" max="0.250" prec="1000" />
+	  <D id="2" shown="true" min="0" max="100" prec="1" />
+	
+	<PID id="3" name="Altitude" desc="Altitude hold control" />
+	  <P id="3" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="3" shown="true" min="0" max="0.250" prec="1000" />
+	  <D id="3" shown="true" min="0" max="100" prec="1" />
+	  
+	<PID id="4" name="PosHold" desc="Position Hold control" />
+	  <P id="4" shown="true" min="0" max="2.54" prec="100" />
+	  <I id="4" shown="true" min="0" max="2.54" prec="100" />
+	  <D id="4" shown="false" min="0" max="100" prec="1" />
+	  
+	<PID id="5" name="PosHoldRate" desc="Position Hold Rate control" />
+	  <P id="5" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="5" shown="true" min="0" max="2.54" prec="100" />
+	  <D id="5" shown="true" min="0" max="0.254" prec="1000" />
+	  
+	<PID id="6" name="Navigation Rate" desc="Navigation Rate control" />
+	  <P id="6" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="6" shown="true" min="0" max="2.54" prec="100" />
+	  <D id="6" shown="true" min="0" max="0.254" prec="1000" />
+	  
+	<PID id="7" name="Level" desc="Autolevel control" />
+	  <P id="7" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="7" shown="true" min="0" max="2.54" prec="100" />
+	  <D id="7" shown="true" min="0" max="100" prec="1" />
+	  
+	<PID id="8" name="Mag" desc="Heading hold control" />
+	  <P id="8" shown="true" min="0" max="20.0" prec="10" />
+	  <I id="8" shown="false" min="0" max="2.54" prec="100" />
+	  <D id="8" shown="false" min="0" max="100" prec="1" />
+	  
+	</CONFIG>

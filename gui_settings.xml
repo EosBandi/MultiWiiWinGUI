@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--MultiWiiWinGUI, Version 1.0.4426.41873-->
+<!--GUI Settings-->
+<!--Do not change this file manually-->
+<PARAMETERS>
+    <FCVERSION value="20" />
+    <LOGFOLDER value=".\" />
+    <CAPTUREFOLDER value=".\" />
+    <LOGATCONNECT value="False" />
+    <SERIALPORT value="" />
+    <SERIALSPEED value="115200" />
+    <LOGRAW value="False" />
+    <LOGATT value="False" />
+    <LOGMAG value="False" />
+    <LOGRCC value="False" />
+    <LOGRCX value="False" />
+    <LOGMOT value="False" />
+    <LOGSRV value="False" />
+    <LOGNAV value="False" />
+    <LOGPAR value="False" />
+    <LOGDBG value="False" />
+</PARAMETERS>

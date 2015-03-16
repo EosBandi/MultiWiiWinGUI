@@ -1,0 +1,13 @@
+Welcome to the MultiWii WinGUI!
+This wizard will guide you through the initial settings of the GUI, such as MultiWii software version or target directories. You can cancel this wizard any time, to get the default values. However it’s highly recommended to go through all steps to get familiar with the settings.
+MultiWii software version. 
+Please choose which software version you are using on your MultiWii controller. Due the recent changes in serial protocol, interim versions between 1.9 and r569 are not working. You can change software version at the GUI Settings tab later if required.
+Serial Comm
+You can set your preferred serial port and serial speed. So you don’t have to set it every time when GUI started. If you are using “stock” MultiWii firmware you must use 115200 for speed. If your preferred serial port is not available the first available port will be selected by the GUI.
+Video Capture folder.
+Please choose where WinGUI save captured video files.
+Logging
+You can log any data that comes from the MultiWii flight controller. When logging is enabled, a new logfile will be created at each connect, and the selected data sets will be logged at each data refresh. You can open and analyze logs in via the LogBrowser. 
+Thank You !
+Your settings are now completed. Remember, you can always change them at the GUI Settings tab.
+
